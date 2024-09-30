@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+         /* li:nth-child(2n){
+            color: rgb(10, 239, 36);
+        } */
+        li:nth-child(2n+1){
+            color: aqua;
+        }
+        li:nth-child(){
+            color: rgb(62, 7, 241);
+        }
+        li:first-child{
+            color: rgb(2, 2, 2);
+        }
+       li:not(:nth-child(4)){
+            color: rgb(26, 220, 26);
+            background-color: black;
+        }
+
+         li:last-child{
+            color: darkred;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="main_list">
+        <ul>
+            <li>hellow 1</li>
+            <li>hellow 2</li>
+            <li>hellow 3</li>
+            <li>hellow 4</li>
+            <li>hellow 5</li>
+        </ul>
+    </div>
+    <div class="main_list1">
+        <ul>
+            <li>hellow 1</li>
+            <li>hellow 2</li>
+            <li>hellow 3</li>
+            <li>hellow 4</li>
+            <li>hellow 5</li>
+        </ul>
+    </div>
+</body>
+</html>

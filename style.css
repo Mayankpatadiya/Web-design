@@ -1,0 +1,38 @@
+.links{
+    background-color:darkgrey;
+    width: 100%;
+   
+
+}
+.links ul{
+     list-style: none;
+     position: relative;
+     float: left;
+     margin: 0;
+     padding: 0;
+}
+.links ul a{
+        text-decoration: none;
+        line-height: 13px;
+        padding: 0px 20px;
+        font-size: large;
+
+}
+.links ul ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding: 15px 0px;
+    display: none;
+    
+}
+.links ul li{
+    float: left;
+    position: relative;
+    padding: 12px 19px;
+}
+.links ul li:hover >ul{
+    display: block;
+    transition: 0.5s;
+    transform: matrix(20);
+}
