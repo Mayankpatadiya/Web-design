@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.links{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+   
+
+}
+.links ul{
+    position: relative;
+    line-height: 65px;
+ float: left;
+ padding: 0;
+
+    list-style: none;
+    
+}
+
+.links ul li:hover > ul{
+    display: block;
+}
+.links ul ul{
+    position: absolute;
+    display: none;
+   
+}
+.links ul a
+{
+       
+    padding: 0px 19px;
+    line-height: 32px ;
+    font-size: 15px;
+    padding: 0px 29px;
+    text-decoration: none;
+   
+
+
+
+}
+.links ul a:hover{
+    color: blueviolet;
+    padding: 10px 29px;
+    background-color: rgba(0, 0, 255, 0.251);
+    border: 1px solid rgba(0, 0, 255, 0.351);
+}
+.links ul a:active{
+    color: green;
+    background-color: chartreuse;
+}
+.links ul a:visited{
+    color: rgb(0, 0, 252);
+   
+}
+.links ul >li{
+    float: left;
+    position: relative;
+    margin: 0;
+    padding:0;
+
+
+   
+}
+
+
+.container{
+    width: 100%;
+    height: 500px;
+    background-color: aqua;
+    background-image: url('img/banner11.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.container .main_part{
+    width: 80%;
+    margin: auto;
+    padding:160px 230px;   
+
+
+}
+.main_part h1{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    
+}
+.main_part p{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size:medium;
+    padding: 8px 0px;
+}
+.main_part .learn_btn{
+    width: 200px;
+    height: 40px;
+}
+
+
+.learn_btn{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: large;
+    border-radius: 5px;
+    background-color: rgba(57, 3, 252, 0.753);
+    color: white;
+    padding: 18px 88px;
+  position: relative;
+  top: 30px;
+  left: 175px;
+}
+
+.learn_btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+}
+
+
+                                /* Product sec */
+
+.our_product{
+    width: 100%;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+
+}
+.product_title{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0px ;
+    font-size: x-large;
+   
+}
+.product_title h3{
+    
+    font-family:'Gill Sans';
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 30px;
+    box-shadow: 5px 5px 5px 9px rgba(128, 128, 128, 0.349);
+}
+.imgbox h3{
+    margin-left: 20px;
+padding: 5px 0px;
+}
+.imgbox p{
+    margin-left: 20px;
+    padding: 5px 0px;
+}
+.imgbox .buy_btn{
+    padding: 10px 35px;
+    width:auto;
+    background-color: rgb(255, 239, 20);
+    border-radius: 12px;
+    text-decoration: none;
+    position: relative;
+    top: 25px;
+    left: 13px;
+}
+.about_us{
+    width: 100%;
+    height: 360px;
+    /* background-color: rgba(161, 156, 156, 0.719); */
+    background-color: rgba(128, 128, 128,0.5);
+}
+.info_about{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    padding: 60px 0px;
+    gap:40px;
+}
+/* p {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      translate: 150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+   */
+ .left_info span{
+    font-size: x-large;
+    font-weight: 600;
+    margin-left: 30px;
+    font-family: 'Gill Sans MT';
+}
+.left_info p{
+    font-size: medium;
+}
+.about_info{
+    
+    padding: 30px;
+
+}
+.email_block{
+    width: 100%;
+    height: 120px;
+    background-color: rgba(0, 255, 34, 0.548);
+}
+.get_email{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    padding: 45px 0px;
+    gap: 10px;
+
+}
+.get_email input[type=email]{
+    width: 40%;
+    height: 40px;
+    border: 2px solid white;
+    background:transparent;
+
+}
+.get_email input[type=submit]{
+    height: 40px;
+    width: 130px;
+    background-color: white;
+    color: rgba(0, 255, 34, 0.986) ;
+    border: 1px solid white;
+    font-size: 16px;
+}
+.get_email input[type=submit]:hover{
+   
+ 
+    color: rgba(0, 0, 0, 0.719) ;
+   background-color: rgb(0, 255, 34);
+  box-shadow:10px 10px 5px ;
+  border: none;
+}
+.get_email input[placeholder]{
+    padding: 12px;
+    font-size: 16px;
+}
